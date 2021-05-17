@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</title>
+</head>
+<style type="text/css">
+	body{
+		background-image: linear-gradient(to right top, #5001c9, #b400a4, #e70074, #ff0043, #ff0000);
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;	
+	}
+	.container{
+		width: 600px;
+		height: 500px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-image: linear-gradient(to right top, #937ab9, #8a608a, #744c62, #573b42, #372b2b);
+
+	}
+	.btn_collection{
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+
+	}
+	button{
+		width: 90px;
+		height: 80px;
+		margin: 10px;
+		background-image: linear-gradient(to right top, #5001c9, #b400a4, #e70074, #ff0043, #ff0000);
+
+	}
+</style>
+<body id="body">
+	<div class="container"> 
+			
+			<div class="btn_collection">
+				<button id="1" onclick="purplebtn()">1</button>
+				<button id="2" onclick="greenbtn()">2</button>
+				<button id="3" onclick="yellowbtn()">3</button>
+				<button id="4">4</button>
+			</div>
+	</div>	
+</body>
+<script type="text/javascript">
+	function purplebtn() {
+		document.getElementById('1').style.background = "red";
+		document.getElementById("body").style.background=" linear-gradient(to right top, #8d7eaa, #b26aad, #df4893, #fd065d, #ff0000)";
+
+	}
+	function greenbtn() {
+		document.getElementById('2').style.background = "green";
+		document.getElementById("body").style.background="linear-gradient(to right top, #6a7a73, #61675b, #575349, #4c413b, #3d3030)";
+
+	}
+	function yellowbtn() {
+		document.getElementById('3').style.background = "yellow";
+		document.getElementById("body").style.background="linear-gradient(to right top, #ed5d00, #c74c27, #9b4133, #6d3935, #3d3030)";
+
+	}
+</script>
+</html>
